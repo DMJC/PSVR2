@@ -1,0 +1,4 @@
+Bluetooth Controller IDs
+24:A6:FA:35:2D:17 (PSVR L)
+24:A6:FA:45:67:21 (PSVR R)
+	

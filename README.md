@@ -20,4 +20,9 @@ Objectives and priority:
 - Read Gyroscopic Data - High
 - Find howto switch PSVR2 between VR and Real World Mode Medium
 - Bluetooth controllers/controller tracking - Low
-- Read Controller Gyroscopic Data - Low
+
+Controllers for the PSVR2 auto-create on Linux as /dev/input/js devices. No further configuration is necessary.
+HP Z-Book built in Intel Bluetooth works really well.
+
+Bluetooth Controllers Tested:
+- 8087:0033 Intel Corp. AX211 Bluetooth - Working
