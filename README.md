@@ -15,7 +15,9 @@ Hardware I'm using for this:
 - PSVR to PC Adapter
 
 Objectives and priority:
-- Find howto switch PSVR2 into VR Mode - Highest
-- Find howto switch PSVR2 between VR and Real World Mode
+- Find howto switch PSVR2 into VR Mode - High
 - Find howto engage inside out tracking - High
+- Read Gyroscopic Data - High
+- Find howto switch PSVR2 between VR and Real World Mode Medium
 - Bluetooth controllers/controller tracking - Low
+- Read Controller Gyroscopic Data - Low
