@@ -1,0 +1,5 @@
+Source: IVRY on Twitter
+FOV Left 61.5f
+FOV Right 43.5f
+FOV Top 53.0f
+FOV Bottom 53.0f
