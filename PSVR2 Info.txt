@@ -1,0 +1,35 @@
+PSVR2 creates 12 USB devices.
+Microphone is auto-detected under Linux and creates itself.
+Device IDs under Windows vs Linux:
+
+Windows Device Manager:
+PS VR2 Control USB\VID_054C PID_0CDE REV_0110 MI_00
+PS VR2 DATA 1 USB\VID_054C PID_0CDE&MI_03\6&21AEE97D&0&0003
+PS VR2 DATA 2 USB\VID_054C PID_0CDE REV_0110 MI_04 
+PS VR2 DATA 3 USB\VID_054C PID_0CDE REV_0110 MI_05 
+PS VR2 DATA 4 USB\VID_054C PID_0CDE REV_0110 MI_06 
+PS VR2 DATA 5 USB\VID_054C PID_0CDE REV_0110 MI_08 
+PS VR2 DATA 6 USB\VID_054C PID_0CDE REV_0110 MI_09 
+PS VR2 DATA 7 USB\VID_054C PID_0CDE REV_0110 MI_0a  
+PS VR2 DATA 8 USB\VID_054C PID_0CDE REV_0110 MI_0b 
+PS VR2 DATA 9 USB\VID_054C PID_0CDE REV_0110 MI_0c
+PS VR2 Status: USB\VID_054C PID_0CDE REB_0110 MI_07
+
+Driver Name: oem259.inf
+
+Linux lsusb -t output:
+Bus 002 Device 002: ID 054c:0cde Sony Corp. PlayStation®VR2
+    |__ Port 001: Dev 002, If 0, Class=Human Interface Device, Driver=usbhid, 5000M
+    |__ Port 001: Dev 002, If 1, Class=Audio, Driver=snd-usb-audio, 5000M - Mic
+    |__ Port 001: Dev 002, If 2, Class=Audio, Driver=snd-usb-audio, 5000M
+    |__ Port 001: Dev 002, If 3, Class=Vendor Specific Class, Driver=[none], 5000M
+    |__ Port 001: Dev 002, If 4, Class=Vendor Specific Class, Driver=[none], 5000M
+    |__ Port 001: Dev 002, If 5, Class=Vendor Specific Class, Driver=[none], 5000M
+    |__ Port 001: Dev 002, If 6, Class=Vendor Specific Class, Driver=[none], 5000M
+    |__ Port 001: Dev 002, If 7, Class=Vendor Specific Class, Driver=[none], 5000M
+    |__ Port 001: Dev 002, If 8, Class=Vendor Specific Class, Driver=[none], 5000M
+    |__ Port 001: Dev 002, If 9, Class=Vendor Specific Class, Driver=[none], 5000M
+    |__ Port 001: Dev 002, If 10, Class=Vendor Specific Class, Driver=[none], 5000M
+    |__ Port 001: Dev 002, If 11, Class=Vendor Specific Class, Driver=[none], 5000M
+    |__ Port 001: Dev 002, If 12, Class=Vendor Specific Class, Driver=[none], 5000M
+
