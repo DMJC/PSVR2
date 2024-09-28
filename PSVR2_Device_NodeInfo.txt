@@ -1,0 +1,15 @@
+USB Interfaces for PSVR2
+.0 - Control
+.1 - Sound/Speaker
+.2 - Mic
+.3 - data output
+.4 - not used
+.5 - not used
+.6 - not used
+.7 - data output
+.8 - data output
+.9 - data output
+.10 - data output
+.11 - data output
+
+Data checked by pcap in Wireshark
