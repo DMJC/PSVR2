@@ -1,0 +1,774 @@
+usb.dst == "2.6.0" || usb.src == "2.6.0"
+
+USB URB
+CONFIGURATION DESCRIPTOR
+INTERFACE DESCRIPTOR (0.0): class HID
+HID DESCRIPTOR
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+INTERFACE DESCRIPTOR (1.0): class Audio
+Class-specific Audio Control Interface Descriptor: Header Descriptor
+Class-specific Audio Control Interface Descriptor: Input terminal descriptor
+Class-specific Audio Control Interface Descriptor: Feature unit descriptor
+Class-specific Audio Control Interface Descriptor: Output terminal descriptor
+INTERFACE DESCRIPTOR (2.0): class Audio
+INTERFACE DESCRIPTOR (2.1): class Audio
+Class-specific Audio Streaming Interface Descriptor: General AS Descriptor
+Class-specific Audio Streaming Interface Descriptor: Format type descriptor
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+Class-specific Audio Streaming Endpoint Descriptor
+
+INTERFACE DESCRIPTOR (3.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+INTERFACE DESCRIPTOR (4.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+INTERFACE DESCRIPTOR (5.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+INTERFACE DESCRIPTOR (5.1): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+INTERFACE DESCRIPTOR (5.2): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+INTERFACE DESCRIPTOR (6.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+INTERFACE DESCRIPTOR (7.0): class Vendor Specific
+INTERFACE DESCRIPTOR (7.1): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+INTERFACE DESCRIPTOR (8.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+INTERFACE DESCRIPTOR (9.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+INTERFACE DESCRIPTOR (10.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+INTERFACE DESCRIPTOR (11.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+INTERFACE DESCRIPTOR (12.0): class Vendor Specific
+ENDPOINT DESCRIPTOR
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+
+
+====================================================================================
+
+Frame 4: 525 bytes on wire (4200 bits), 525 bytes captured (4200 bits) on interface \\.\USBPcap2, id 0
+    Section number: 1
+    Interface id: 0 (\\.\USBPcap2)
+        Interface name: \\.\USBPcap2
+        Interface description: USBPcap2
+    Encapsulation type: USB packets with USBPcap header (152)
+    Arrival Time: Sep 28, 2024 23:55:06.374849000 ACST
+    UTC Arrival Time: Sep 28, 2024 14:25:06.374849000 UTC
+    Epoch Arrival Time: 1727533506.374849000
+    [Time shift for this packet: 0.000000000 seconds]
+    [Time delta from previous captured frame: 0.000000000 seconds]
+    [Time delta from previous displayed frame: 0.000000000 seconds]
+    [Time since reference or first frame: 0.000000000 seconds]
+    Frame Number: 4
+    Frame Length: 525 bytes (4200 bits)
+    Capture Length: 525 bytes (4200 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: usb:usbhid:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio:usbaudio]
+USB URB
+    [Source: 2.6.0]
+    [Destination: host]
+    USBPcap pseudoheader length: 28
+    IRP ID: 0x0000000000000000
+    IRP USBD_STATUS: USBD_STATUS_SUCCESS (0x00000000)
+    URB Function: URB_FUNCTION_CONTROL_TRANSFER (0x0008)
+    IRP information: 0x01, Direction: PDO -> FDO
+        0000 000. = Reserved: 0x00
+        .... ...1 = Direction: PDO -> FDO (0x1)
+    URB bus id: 2
+    Device address: 6
+    Endpoint: 0x80, Direction: IN
+        1... .... = Direction: IN (1)
+        .... 0000 = Endpoint number: 0
+    URB transfer type: URB_CONTROL (0x02)
+    Packet Data Length: 497
+    [Request in: 3]
+    [Time from request: 0.000000000 seconds]
+    Control transfer stage: Complete (3)
+CONFIGURATION DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x02 (CONFIGURATION)
+    wTotalLength: 497
+    bNumInterfaces: 13
+    bConfigurationValue: 1
+    iConfiguration: 0
+    Configuration bmAttributes: 0x80  NOT SELF-POWERED  NO REMOTE-WAKEUP
+        1... .... = Must be 1: Must be 1 for USB 1.1 and higher
+        .0.. .... = Self-Powered: This device is powered from the USB bus
+        ..0. .... = Remote Wakeup: This device does NOT support remote wakeup
+    bMaxPower: 112  (224mA)
+INTERFACE DESCRIPTOR (0.0): class HID
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 0
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: HID (0x03)
+    bInterfaceSubClass: No Subclass (0x00)
+    bInterfaceProtocol: 0x00
+    iInterface: 3
+HID DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x21 (HID)
+    bcdHID: 0x0111
+    bCountryCode: Not Supported (0x00)
+    bNumDescriptors: 1
+    bDescriptorType: HID Report (0x22)
+    wDescriptorLength: 48
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x81  IN  Endpoint:1
+        1... .... = Direction: IN Endpoint
+        .... 0001 = Endpoint Number: 0x1
+    bmAttributes: 0x03
+        .... ..11 = Transfertype: Interrupt-Transfer (0x3)
+    wMaxPacketSize: 64
+        ...0 0... .... .... = Transactions per microframe: 1 (0)
+        .... ..00 0100 0000 = Maximum Packet Size: 64
+    bInterval: 4
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 0
+    bmAttributes: 0x00
+    wBytesPerInterval: 64
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x01  OUT  Endpoint:1
+        0... .... = Direction: OUT Endpoint
+        .... 0001 = Endpoint Number: 0x1
+    bmAttributes: 0x03
+        .... ..11 = Transfertype: Interrupt-Transfer (0x3)
+    wMaxPacketSize: 64
+        ...0 0... .... .... = Transactions per microframe: 1 (0)
+        .... ..00 0100 0000 = Maximum Packet Size: 64
+    bInterval: 4
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 0
+    bmAttributes: 0x00
+    wBytesPerInterval: 64
+INTERFACE DESCRIPTOR (1.0): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 1
+    bAlternateSetting: 0
+    bNumEndpoints: 0
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: Audio Control (0x01)
+    bInterfaceProtocol: 0x00
+    iInterface: 4
+Class-specific Audio Control Interface Descriptor: Header Descriptor
+    bLength: 9
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Header Descriptor (0x01)
+    Version: 1.00
+    Total length: 39
+    Total number of interfaces: 1
+    Interface number: 2
+Class-specific Audio Control Interface Descriptor: Input terminal descriptor
+    bLength: 12
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Input terminal descriptor (0x02)
+    Terminal ID: 1
+    Terminal Type: Microphone (0x0201)
+    Assoc Terminal: 0
+    Number Channels: 1
+    Channel Config: 0x0000
+        .... .... .... ...0 = Left Front: False
+        .... .... .... ..0. = Right Front: False
+        .... .... .... .0.. = Center Front: False
+        .... .... .... 0... = Low Frequency Enhancement: False
+        .... .... ...0 .... = Left Surround: False
+        .... .... ..0. .... = Right Surround: False
+        .... .... .0.. .... = Left of Center: False
+        .... .... 0... .... = Right of Center: False
+        .... ...0 .... .... = Surround: False
+        .... ..0. .... .... = Side Left: False
+        .... .0.. .... .... = Side Right: False
+        .... 0... .... .... = Top: False
+        0000 .... .... .... = Reserved: 0x0
+    Channel Names: 0
+    String descriptor index: 0
+Class-specific Audio Control Interface Descriptor: Feature unit descriptor
+    bLength: 9
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Feature unit descriptor (0x06)
+    Unit ID: 2
+    Source ID: 1
+    Control Size: 1
+    Controls: 0300
+        Master channel 0 Control: 0x03, Mute, Volume
+            .... ...1 = Mute: True
+            .... ..1. = Volume: True
+            .... .0.. = Bass: False
+            .... 0... = Mid: False
+            ...0 .... = Treble: False
+            ..0. .... = Graphic Equalizer: False
+            .0.. .... = Automatic Gain: False
+            0... .... = Delay: False
+        Logical channel 1 Control: 0x00
+            .... ...0 = Mute: False
+            .... ..0. = Volume: False
+            .... .0.. = Bass: False
+            .... 0... = Mid: False
+            ...0 .... = Treble: False
+            ..0. .... = Graphic Equalizer: False
+            .0.. .... = Automatic Gain: False
+            0... .... = Delay: False
+    Feature: 0
+Class-specific Audio Control Interface Descriptor: Output terminal descriptor
+    bLength: 9
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Output terminal descriptor (0x03)
+    Terminal ID: 3
+    Terminal Type: USB Streaming (0x0101)
+    Assoc Terminal: 0
+    Source ID: 2
+    String descriptor index: 0
+INTERFACE DESCRIPTOR (2.0): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 2
+    bAlternateSetting: 0
+    bNumEndpoints: 0
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: Audio Streaming (0x02)
+    bInterfaceProtocol: 0x00
+    iInterface: 5
+INTERFACE DESCRIPTOR (2.1): class Audio
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 2
+    bAlternateSetting: 1
+    bNumEndpoints: 1
+    bInterfaceClass: Audio (0x01)
+    bInterfaceSubClass: Audio Streaming (0x02)
+    bInterfaceProtocol: 0x00
+    iInterface: 5
+Class-specific Audio Streaming Interface Descriptor: General AS Descriptor
+    bLength: 7
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: General AS Descriptor (0x01)
+    Connected Terminal ID: 3
+    Interface delay in frames: 0
+    Format: PCM (0x0001)
+Class-specific Audio Streaming Interface Descriptor: Format type descriptor
+    bLength: 11
+    bDescriptorType: 0x24 (audio class interface)
+    Subtype: Format type descriptor (0x02)
+    FormatType: 1
+    Number Channels: 1
+    Subframe Size: 2
+    Bit Resolution: 16
+    Samples Frequence Type: 1
+    Samples Frequence: 48000
+ENDPOINT DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x82  IN  Endpoint:2
+        1... .... = Direction: IN Endpoint
+        .... 0010 = Endpoint Number: 0x2
+    bmAttributes: 0x05
+        .... ..01 = Transfertype: Isochronous-Transfer (0x1)
+        .... 01.. = Synchronisationtype: Asynchronous (0x1)
+        ..00 .... = Behaviourtype: Data-Endpoint (0x0)
+    wMaxPacketSize: 96
+        ...0 0... .... .... = Transactions per microframe: 1 (0)
+        .... ..00 0110 0000 = Maximum Packet Size: 96
+    bInterval: 4
+    bRefresh: 0
+    bSynchAddress: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 0
+    bmAttributes: 0x00
+        .... ..00 = Mult: 0
+    wBytesPerInterval: 96
+Class-specific Audio Streaming Endpoint Descriptor
+    bLength: 7
+    bDescriptorType: 0x25 (audio class endpoint)
+    Subtype: General Descriptor (0x01)
+    Attributes: 0x80, MaxPacketsOnly
+        .... ...0 = Sampling Frequency Control: False
+        .... ..0. = Pitch Control: False
+        .000 00.. = Reserved: 0x00
+        1... .... = MaxPacketsOnly: True
+    Lock Delay Units: Undefined (0)
+    Lock Delay: 0
+INTERFACE DESCRIPTOR (3.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 3
+    bAlternateSetting: 0
+    bNumEndpoints: 1
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x01
+    bInterfaceProtocol: 0x00
+    iInterface: 6
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x83  IN  Endpoint:3
+        1... .... = Direction: IN Endpoint
+        .... 0011 = Endpoint Number: 0x3
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 0
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (4.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 4
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x02
+    bInterfaceProtocol: 0x00
+    iInterface: 7
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x84  IN  Endpoint:4
+        1... .... = Direction: IN Endpoint
+        .... 0100 = Endpoint Number: 0x4
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x04  OUT  Endpoint:4
+        0... .... = Direction: OUT Endpoint
+        .... 0100 = Endpoint Number: 0x4
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (5.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 5
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x03
+    bInterfaceProtocol: 0x00
+    iInterface: 8
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x85  IN  Endpoint:5
+        1... .... = Direction: IN Endpoint
+        .... 0101 = Endpoint Number: 0x5
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x05  OUT  Endpoint:5
+        0... .... = Direction: OUT Endpoint
+        .... 0101 = Endpoint Number: 0x5
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (5.1): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 5
+    bAlternateSetting: 1
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x03
+    bInterfaceProtocol: 0x00
+    iInterface: 8
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x86  IN  Endpoint:6
+        1... .... = Direction: IN Endpoint
+        .... 0110 = Endpoint Number: 0x6
+    bmAttributes: 0x03
+        .... ..11 = Transfertype: Interrupt-Transfer (0x3)
+    wMaxPacketSize: 512
+        ...0 0... .... .... = Transactions per microframe: 1 (0)
+        .... ..10 0000 0000 = Maximum Packet Size: 512
+    bInterval: 1
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 0
+    bmAttributes: 0x00
+    wBytesPerInterval: 512
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x05  OUT  Endpoint:5
+        0... .... = Direction: OUT Endpoint
+        .... 0101 = Endpoint Number: 0x5
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (5.2): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 5
+    bAlternateSetting: 2
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x03
+    bInterfaceProtocol: 0x00
+    iInterface: 8
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x85  IN  Endpoint:5
+        1... .... = Direction: IN Endpoint
+        .... 0101 = Endpoint Number: 0x5
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x05  OUT  Endpoint:5
+        0... .... = Direction: OUT Endpoint
+        .... 0101 = Endpoint Number: 0x5
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (6.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 6
+    bAlternateSetting: 0
+    bNumEndpoints: 1
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x04
+    bInterfaceProtocol: 0x00
+    iInterface: 9
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x87  IN  Endpoint:7
+        1... .... = Direction: IN Endpoint
+        .... 0111 = Endpoint Number: 0x7
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (7.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 7
+    bAlternateSetting: 0
+    bNumEndpoints: 0
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x05
+    bInterfaceProtocol: 0x00
+    iInterface: 10
+INTERFACE DESCRIPTOR (7.1): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 7
+    bAlternateSetting: 1
+    bNumEndpoints: 1
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x05
+    bInterfaceProtocol: 0x00
+    iInterface: 10
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x88  IN  Endpoint:8
+        1... .... = Direction: IN Endpoint
+        .... 1000 = Endpoint Number: 0x8
+    bmAttributes: 0x03
+        .... ..11 = Transfertype: Interrupt-Transfer (0x3)
+    wMaxPacketSize: 1024
+        ...0 0... .... .... = Transactions per microframe: 1 (0)
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 4
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 0
+    bmAttributes: 0x00
+    wBytesPerInterval: 1024
+INTERFACE DESCRIPTOR (8.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 8
+    bAlternateSetting: 0
+    bNumEndpoints: 1
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x06
+    bInterfaceProtocol: 0x00
+    iInterface: 11
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x89  IN  Endpoint:9
+        1... .... = Direction: IN Endpoint
+        .... 1001 = Endpoint Number: 0x9
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (9.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 9
+    bAlternateSetting: 0
+    bNumEndpoints: 1
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x07
+    bInterfaceProtocol: 0x00
+    iInterface: 12
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x8a  IN  Endpoint:10
+        1... .... = Direction: IN Endpoint
+        .... 1010 = Endpoint Number: 0xa
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (10.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 10
+    bAlternateSetting: 0
+    bNumEndpoints: 2
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x08
+    bInterfaceProtocol: 0x00
+    iInterface: 13
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x8b  IN  Endpoint:11
+        1... .... = Direction: IN Endpoint
+        .... 1011 = Endpoint Number: 0xb
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x02  OUT  Endpoint:2
+        0... .... = Direction: OUT Endpoint
+        .... 0010 = Endpoint Number: 0x2
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (11.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 11
+    bAlternateSetting: 0
+    bNumEndpoints: 1
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0x09
+    bInterfaceProtocol: 0x00
+    iInterface: 14
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x8c  IN  Endpoint:12
+        1... .... = Direction: IN Endpoint
+        .... 1100 = Endpoint Number: 0xc
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 15
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+INTERFACE DESCRIPTOR (12.0): class Vendor Specific
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 12
+    bAlternateSetting: 0
+    bNumEndpoints: 1
+    bInterfaceClass: Vendor Specific (0xff)
+    bInterfaceSubClass: 0xdb
+    bInterfaceProtocol: 0x00
+    iInterface: 15
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x8d  IN  Endpoint:13
+        1... .... = Direction: IN Endpoint
+        .... 1101 = Endpoint Number: 0xd
+    bmAttributes: 0x02
+        .... ..10 = Transfertype: Bulk-Transfer (0x2)
+    wMaxPacketSize: 1024
+        .... ..00 0000 0000 = Maximum Packet Size: 0
+    bInterval: 0
+SUPERSPEED ENDPOINT COMPANION DESCRIPTOR
+    bLength: 6
+    bDescriptorType: 0x30 (SUPERSPEED USB ENDPOINT COMPANION)
+    bMaxBurst: 0
+    bmAttributes: 0x00
+        .... 0000 = MaxStreams: 0
+    wBytesPerInterval: 0
+

@@ -1,0 +1,17 @@
+0.0 IN interrupt max size 64, Out interrupt max size 64
+1.0 Audio Mic
+2.0 Audio
+2.1 Audio
+3.0 IN bulk-transfer max size 1024
+4.0 IN bulk-transfer max size 1024, Out bulk-transfer max size 1024
+5.0 IN bulk-transfer max size 1024, Out bulk-transfer max size 1024
+5.1 IN interrupt max size 512, Out bulk-transfer max size 1024
+5.2 IN bulk-transfer max size 512, Out bulk-transfer max size 1024
+6.0 bulk-transfer max size 1024
+7.0/7.1 interrupt max size 1024
+8.0 bulk-transfer max size 1024
+9.0 bulk-transfer max size 1024
+10.0 bulk-transfer max size 1024
+11.0 bulk-transfer max size 1024
+12.0 bulk-transfer max size 1024
+
