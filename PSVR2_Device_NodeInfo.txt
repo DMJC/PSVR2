@@ -1,15 +1,131 @@
 USB Interfaces for PSVR2
 .0 - Control
-.1 - Sound/Speaker
-.2 - Mic
-.3 - data output
-.4 - not used
-.5 - not used
-.6 - not used
-.7 - data output
-.8 - data output
-.9 - data output
-.10 - data output
-.11 - data output
+.1 - Sound/Speaker 48000hz PCM
+.2 - Mic 
+.3 - data output BULK_IN [1024]
+.4 - data output BULK_IN [1024]
+.5 - data input BULK_IN [1024]
+.5 - data output BULK_OUT [1024]
+.6 - data output BULK_OUT [1024]
+.7 - data output INTERRUPT_IN [1024]
+.8 - data output BULK IN [1024]
+.9 - data output BULK_IN [1024]
+.10 - data output BULK_IN [1024]
+.10 - data output BULK_OUT [1024]
+.11 - data output BULK_IN [1024]
+.12 - data output BULK_IN [1024]
 
 Data checked by pcap in Wireshark
+
+lsusb -d 054c:0cde -v | grep Interface
+    bNumInterfaces         13
+    Interface Descriptor:
+      bInterfaceNumber        0
+      bInterfaceClass         3 Human Interface Device
+      bInterfaceSubClass      0 [unknown]
+      bInterfaceProtocol      0 
+      iInterface              3 PS VR2 Control
+    Interface Descriptor:
+      bInterfaceNumber        1
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      1 Control Device
+      bInterfaceProtocol      0 
+      iInterface              4 PS VR2 Audio
+      AudioControl Interface Descriptor:
+        baInterfaceNr(0)        2
+      AudioControl Interface Descriptor:
+      AudioControl Interface Descriptor:
+      AudioControl Interface Descriptor:
+    Interface Descriptor:
+      bInterfaceNumber        2
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      2 Streaming
+      bInterfaceProtocol      0 
+      iInterface              5 PS VR2 Audio Mic
+    Interface Descriptor:
+      bInterfaceNumber        2
+      bInterfaceClass         1 Audio
+      bInterfaceSubClass      2 Streaming
+      bInterfaceProtocol      0 
+      iInterface              5 PS VR2 Audio Mic
+      AudioStreaming Interface Descriptor:
+      AudioStreaming Interface Descriptor:
+    Interface Descriptor:
+      bInterfaceNumber        3
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      1 [unknown]
+      bInterfaceProtocol      0 
+      iInterface              6 PS VR2 Data 1
+    Interface Descriptor:
+      bInterfaceNumber        4
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      2 [unknown]
+      bInterfaceProtocol      0 
+      iInterface              7 PS VR2 Data 2
+    Interface Descriptor:
+      bInterfaceNumber        5
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      3 [unknown]
+      bInterfaceProtocol      0 
+      iInterface              8 PS VR2 Data 3
+    Interface Descriptor:
+      bInterfaceNumber        5
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      3 [unknown]
+      bInterfaceProtocol      0 
+      iInterface              8 PS VR2 Data 3
+    Interface Descriptor:
+      bInterfaceNumber        5
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      3 [unknown]
+      bInterfaceProtocol      0 
+      iInterface              8 PS VR2 Data 3
+    Interface Descriptor:
+      bInterfaceNumber        6
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      4 [unknown]
+      bInterfaceProtocol      0 
+      iInterface              9 PS VR2 Data 4
+    Interface Descriptor:
+      bInterfaceNumber        7
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      5 [unknown]
+      bInterfaceProtocol      0 
+      iInterface             10 PS VR2 Status
+    Interface Descriptor:
+      bInterfaceNumber        7
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      5 [unknown]
+      bInterfaceProtocol      0 
+      iInterface             10 PS VR2 Status
+    Interface Descriptor:
+      bInterfaceNumber        8
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      6 [unknown]
+      bInterfaceProtocol      0 
+      iInterface             11 PS VR2 Data 5
+    Interface Descriptor:
+      bInterfaceNumber        9
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      7 [unknown]
+      bInterfaceProtocol      0 
+      iInterface             12 PS VR2 Data 6
+    Interface Descriptor:
+      bInterfaceNumber       10
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      8 [unknown]
+      bInterfaceProtocol      0 
+      iInterface             13 PS VR2 Data 7
+    Interface Descriptor:
+      bInterfaceNumber       11
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass      9 [unknown]
+      bInterfaceProtocol      0 
+      iInterface             14 PS VR2 Data 8
+    Interface Descriptor:
+      bInterfaceNumber       12
+      bInterfaceClass       255 Vendor Specific Class
+      bInterfaceSubClass    219 [unknown]
+      bInterfaceProtocol      0 
+      iInterface             15 PS VR2 Data 9
+
