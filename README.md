@@ -49,7 +49,7 @@ I love space flight/combat games, think Wing Commander and Freespace 2, would li
 ## Objectives and priority: ##
 - Find howto switch PSVR2 into VR Mode - Done Headset automatically starts in VR mode once a picture is going to it.
 - Find howto engage inside out tracking - High
-- Read Gyroscopic Data - High
+- Read Gyroscopic Data - In Progress - Most Gyroscope functions have been documented.
 - Find howto switch PSVR2 between VR and Real World Mode - Done
 - Bluetooth controllers/controller tracking - Low
 
