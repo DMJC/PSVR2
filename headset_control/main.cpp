@@ -59,14 +59,20 @@ int main() {
 
 	int initialise_headset = 0;
 	int trigger_exit = 0;
-	int state = 0;
+	bool state = false;
 	while (trigger_exit != 1){
 		if (initialise_headset == 0 ){
 			initialise_headset = cb_init_headset(initialise_headset, dev_handle, ctx);
+//			cb_init_ep_5(initialise_headset, dev_handle, ctx);
 		}
 		usleep(1000);
-//		cb_interrupt_headset(dev_handle, ctx);
-		cb_activate_external_view(state, dev_handle, ctx);
+//		cb_interrupt_headset_port_5(state, dev_handle, ctx);
+
+		state = cb_interrupt_headset_port_8(state, dev_handle, ctx);
+		if (state == true){
+			printf ("Activating Cam\n");
+			cb_activate_external_view(dev_handle, ctx);
+		}
 //		cb_activate_internal_view(state, dev_handle, ctx);
 //		cb_transfer_headset(dev_handle, ctx);
 	}
