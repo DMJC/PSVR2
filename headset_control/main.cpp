@@ -63,18 +63,24 @@ int main() {
 	while (trigger_exit != 1){
 		if (initialise_headset == 0 ){
 			initialise_headset = cb_init_headset(initialise_headset, dev_handle, ctx);
-//			cb_init_ep_5(initialise_headset, dev_handle, ctx);
 		}
 		usleep(1000);
-//		cb_interrupt_headset_port_5(state, dev_handle, ctx);
-
-		state = cb_interrupt_headset_port_8(state, dev_handle, ctx);
+		state = cb_get_gyro_data(state, dev_handle, ctx);
+//		cb_transfer_ep5(dev_handle, ctx);
+//		cb_transfer_ep9(dev_handle, ctx);
+//		cb_transfer_ep10(dev_handle, ctx); //Probably Camera Data
+//		cb_transfer_ep11(dev_handle, ctx);
+//		cb_transfer_ep13(dev_handle, ctx);
 		if (state == true){
 			printf ("Activating Cam\n");
 			cb_activate_external_view(dev_handle, ctx);
+//			cb_activate_external_view_mode_2(state, dev_handle, ctx);
 		}
-//		cb_activate_internal_view(state, dev_handle, ctx);
-//		cb_transfer_headset(dev_handle, ctx);
+		int int_view = 0;
+		printf ("\nint view: %d and initialise Headset: %d", int_view, initialise_headset );
+/*		if (int_view == 0 && initialise_headset == true){
+		}*/
+		cb_transfer_get_video(dev_handle, ctx);
 	}
 	return 0;
 }

@@ -94,7 +94,7 @@ int cb_init_ep_5(int& initialise_headset, libusb_device_handle* &dev_handle, lib
 return 1;
 }
 
-int cb_activate_internal_view(int &state, libusb_device_handle* &dev_handle, libusb_context* &ctx){
+bool cb_activate_internal_view(bool &state, libusb_device_handle* &dev_handle, libusb_context* &ctx){
 	if (state == 0){
 		cout << "Activating Unknown Mode" << endl;
 		unsigned char activate_code[24] = {0x14, 0x00, 0x01, 0x00, 0x10, 0x00, 0x00, 0x00, 0x55, 0x00, 0x00, 0x00, 0xf4, 0x01, 0x00, 0x00, 0x01, 0x00, 0x80, 0x24, 0x00, 0x00, 0x00, 0x00};
