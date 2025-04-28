@@ -1,4 +1,7 @@
 # PSVR2
+
+-This repository is now defunct, highly recommend looking at the Monado Driver, they have now figured out hand and eye tracking, HDR video display and Haptic Feedback on the PSVR2 headset. This repository will remain as a legacy information dump.-
+
 Attempt at making the PSVR2 work under Linux
 
 I was able to activate the headset with X11, I haven't been able to activate it using Wayland. The headset already detects as a DRM lease device under Linux (a special X11/Wayland mode for rendering to VR headsets). By bringing up the headset in X11 you can reconfigure it to be another monitor. This is a lot easier to test with.
